@@ -27,11 +27,6 @@ machine:
   sysctls:
     net.core.bpf_jit_harden: "1"
 
-  # ── Kernel modules required by Cilium ───────────────────────────────────────
-  kernel:
-    modules:
-      - name: br_netfilter
-      - name: ip_tables
 
 cluster:
   # ── Cluster network: CNI = none (we install Cilium ourselves) ────────────────

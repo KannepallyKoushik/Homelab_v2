@@ -27,7 +27,4 @@ machine:
   sysctls:
     net.core.bpf_jit_harden: "1"
 
-  kernel:
-    modules:
-      - name: br_netfilter
-      - name: ip_tables
+  
