@@ -1,0 +1,64 @@
+# This file is maintained automatically by "tofu init".
+# Manual edits may be lost in future updates.
+
+provider "registry.opentofu.org/bpg/proxmox" {
+  version     = "0.105.0"
+  constraints = "~> 0.66"
+  hashes = [
+    "h1:dmlSz3EcZKvBH3/MAdgA0Wd3fHFx+VKL+6da6vPo0I0=",
+    "zh:067ec235c7325169a078bbc9f6038949363924c130eaaa9c54e23fbddbddce56",
+    "zh:22956e6902d333a4e0dea0cf5cd3779459abc904c9391039dc43c1047e65ef22",
+    "zh:23cc774b4283350a4e64248e0577ec61fc3fba47890b5c431719ac084661e2ba",
+    "zh:251992965d500dc2599af3b33a04815c2c01ab035f4bcc070eedcd57bf2e1dc9",
+    "zh:43a2d7d9d4bfd0bf3425b370e566cf6f6471fe718218bd1a54c6d389452d25f8",
+    "zh:48d9c566f3ba2c309976d4ecc62c567720d437867a2200efdc79ea88b5feeb04",
+    "zh:5a2aff8a44ed1d1ce5fdad4a82cc486fc08161c18413dc1c4be43bfa5e93fb0e",
+    "zh:64cf355d3d19f8470366eb74eb19d3cf92c468d0251df768ecd6deb8cde74b3a",
+    "zh:7adf2085e8071164f1521b5893770670db110f15e2c6c39b09bf4164eb329264",
+    "zh:c2feecc24ed0d18a4b50a1488e41d8a4ca6969cea2b173719c5c4aa5386ad75c",
+    "zh:d3f20ded95b809a03877fa23f1c442b88faaf7e1e9017d415afa8ff0b2e7beae",
+    "zh:e17a4848e4795fd3dbc94328e546bc7274e1c06535bcf428949db63c2f900709",
+    "zh:f26e0763dbe6a6b2195c94b44696f2110f7f55433dc142839be16b9697fa5597",
+    "zh:f5417ad73f2a06cc78e141dff0446ecece824ac9b5a67ea1a5c2d58e3f152389",
+  ]
+}
+
+provider "registry.opentofu.org/hashicorp/helm" {
+  version     = "2.17.0"
+  constraints = "~> 2.17"
+  hashes = [
+    "h1:ShIag7wqd5Rs+zYpVMpjAh+T0ozr4XGYfSTKWqceQBY=",
+    "zh:02690815e35131a42cb9851f63a3369c216af30ad093d05b39001d43da04b56b",
+    "zh:27a62f12b29926387f4d71aeeee9f7ffa0ccb81a1b6066ee895716ad050d1b7a",
+    "zh:2d0a5babfa73604b3fefc9dab9c87f91c77fce756c2e32b294e9f1290aed26c0",
+    "zh:3976400ceba6dda4636e1d297e3097e1831de5628afa534a166de98a70d1dcbe",
+    "zh:54440ef14f342b41d75c1aded7487bfcc3f76322b75894235b47b7e89ac4bfa4",
+    "zh:6512e2ab9f2fa31cbb90d9249647b5c5798f62eb1215ec44da2cdaa24e38ad25",
+    "zh:795f327ca0b8c5368af0ed03d5d4f6da7260692b4b3ca0bd004ed542e683464d",
+    "zh:ba659e1d94f224bc3f1fd34cbb9d2663e3a8e734108e5a58eb49eda84b140978",
+    "zh:c5c8575c4458835c2acbc3d1ed5570589b14baa2525d8fbd04295c097caf41eb",
+    "zh:e0877a5dac3de138e61eefa26b2f5a13305a17259779465899880f70e11314e0",
+  ]
+}
+
+provider "registry.opentofu.org/siderolabs/talos" {
+  version     = "0.11.0"
+  constraints = "~> 0.7"
+  hashes = [
+    "h1:1NC84ojUrL+G3aSLMl4Khh83HnJYuxsYNKK7zg2C/dI=",
+    "zh:0fa82a384b25a58b65523e0ea4768fa1212b1f5cfc0c9379d31162454fedcc9d",
+    "zh:12e0f007b86240b6d06d497fcc5a2092056683a7bb2dac56571d9f0cab0d99a6",
+    "zh:1468add8a3bc8d2d12af9671431b0881639c81b5c04c89f7cbfd34f7eed4e860",
+    "zh:194fca4484d2dbb55351235cfb8c174471925b3390f99ce148d8908a7ae42c20",
+    "zh:1a0c53146625e6e13b6794e823079e696dae53719ffb421bfa77c9e625cf64bb",
+    "zh:245987cdc2cf922a72814ebc502ddd7eec68fbb6d1a64b11a7d2b3f2a514f3a6",
+    "zh:2491690b2881c2670eec72fcfd02a2956865464b6e962110b9317f04ca5d8857",
+    "zh:28d4f6ea1b3ffffaf70823d8ccd05a05e5092b462ad2f66735915f532b71157f",
+    "zh:362cfb8929712dc2fec16d3245bac955f3a99c8b511eee7b9dde13f9ada49dd5",
+    "zh:3c807429a02213e36d044549ec03cb883d141084e1f113553088aa88497de543",
+    "zh:50755afc9c8921e264ba8bf8680e498970ddd4b726f3f41e3ad37d973ba9204c",
+    "zh:585582cf4e629de2b044ce2cf634ee0772f25937edea1c22a3a9b5102d8fc7bf",
+    "zh:696e4d43139cfd55dce7d91da92318839bc9ba553d89885ba202ce61cd0bb729",
+    "zh:d218bab0f67a2a8b15add9b51df3d30f514b57e9a7c1d733ebe97966ea132acb",
+  ]
+}

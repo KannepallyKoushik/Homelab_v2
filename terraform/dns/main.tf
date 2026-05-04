@@ -30,10 +30,25 @@ resource "pfsense_dnsresolver_hostoverride" "pve_node2" {
   description = "PVE Node 2"
 }
 
-# ------------------- Services -------------------
+# ------------------- VMs -------------------
 
-resource "pfsense_dnsresolver_domainoverride" "pve_gui" {
-  domain      = "pve.kannepally.me"
-  ip_address  = "192.168.11.14:8006"
-  description = "PVE GUI"
+resource "pfsense_dnsresolver_hostoverride" "linux-learn-ubuntu" {
+  host        = "linux-learn"
+  domain      = "kannepally.me"
+  ip_addresses  = ["192.168.11.15"]
+  description = "Linux Learn Ubuntu VM"
+}
+
+resource "pfsense_dnsresolver_hostoverride" "talos-cp" {
+  host        = "talos-cp"
+  domain      = "kannepally.me"
+  ip_addresses  = ["192.168.11.151"]
+  description = "Talos Control Plane VM"
+}
+
+resource "pfsense_dnsresolver_hostoverride" "talos-worker1" {
+  host        = "talos-worker1"
+  domain      = "kannepally.me"
+  ip_addresses  = ["192.168.11.152"]
+  description = "Talos Worker 1 VM"
 }
