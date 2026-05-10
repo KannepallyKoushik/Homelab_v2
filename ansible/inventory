@@ -1,2 +1,9 @@
 [firewall]
 pfsense.kannepally.me
+
+[nodes]
+pve-node1
+pve-node2
+
+[VMs]
+linux-learn

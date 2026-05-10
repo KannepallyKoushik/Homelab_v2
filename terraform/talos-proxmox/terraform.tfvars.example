@@ -1,0 +1,43 @@
+# Rename this file to terraform.tfvars and fill in your values.
+# Never commit terraform.tfvars to git — add it to .gitignore.
+
+# ─── Proxmox ──────────────────────────────────────────────────────────────────
+proxmox_api_url      = "https://192.168.1.10:8006"      # <-- your Proxmox IP
+proxmox_api_token    = "opentofu@pve!opentofu-token=REPLACE_WITH_SECRET"
+proxmox_tls_insecure = true
+proxmox_node         = "pve-node2"
+
+# ─── Cluster ──────────────────────────────────────────────────────────────────
+cluster_name       = "talos-homelab"
+talos_version      = "v1.12.3"
+kubernetes_version = "v1.32.3"
+
+# ─── Network ──────────────────────────────────────────────────────────────────
+network_bridge        = "vmbr0"
+network_gateway       = "192.168.1.1"
+network_subnet_prefix = 24
+dns_servers           = ["192.168.1.1", "1.1.1.1"]  # use your firewall IP as primary
+
+# ─── Control Plane ────────────────────────────────────────────────────────────
+cp_vm_id        = 200
+cp_ip           = "192.168.1.50"
+cp_cpu_cores    = 2
+cp_memory_mb    = 4096
+cp_disk_size_gb = 50
+
+# ─── Worker ───────────────────────────────────────────────────────────────────
+worker_vm_id        = 201
+worker_ip           = "192.168.1.51"
+worker_cpu_cores    = 4
+worker_memory_mb    = 8192
+worker_disk_size_gb = 100
+
+# ─── Storage ──────────────────────────────────────────────────────────────────
+proxmox_iso_datastore = "local"
+talos_iso_filename    = "nocloud-amd-1.12.3.iso"     # Download the iso from talos image factory to promox node
+vm_disk_datastore     = "local-lvm"
+
+# ─── Cilium ───────────────────────────────────────────────────────────────────
+cilium_chart_version = "1.17.3"
+cluster_pod_cidr     = "10.244.0.0/16"
+cluster_service_cidr = "10.96.0.0/12"
